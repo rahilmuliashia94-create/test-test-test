@@ -26,3 +26,14 @@
     <div id="root"></div>
   </body>
 </html>
+<script>
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelectorAll("section").forEach(section => {
+      if (section.textContent.includes("Trusted by leading")) {
+        section.remove();
+      }
+    });
+  }, 1000);
+});
+</script>
